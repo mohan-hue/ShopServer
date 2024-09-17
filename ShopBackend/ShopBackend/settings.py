@@ -178,8 +178,8 @@ REST_FRAMEWORK = {
 }
 
 # celery配置
-# CELERY_BROKER_URL = 'amqp://localhost'  # 使用 RabbitMQ 作为消息代理
-# CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'  # 使用 Redis 作为结果后端
+CELERY_BROKER_URL = 'amqp://localhost'  # 使用 RabbitMQ 作为消息代理
+CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'  # 使用 Redis 作为结果后端
 
 CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
