@@ -1,0 +1,1 @@
+docker run -d -v $(pwd):/app -v $(pwd)/redis.conf:/etc/redis/redis.conf -v $(pwd)/keepalived.conf:/etc/keepalived/keepalived.conf -v $(pwd)/nginx.conf:/etc/nginx/nginx.conf --privileged --net=host --dns 8.8.8.8 --name shop_backend shop_v4
